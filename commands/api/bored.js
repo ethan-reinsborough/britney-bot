@@ -1,3 +1,4 @@
+const fetch = require("node-fetch");
 module.exports = {
   name: "bored",
   description: "Gives random activities to cure your boredom.",

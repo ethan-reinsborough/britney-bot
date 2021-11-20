@@ -1,3 +1,4 @@
+const fetch = require("node-fetch");
 module.exports = {
     name: "bchar",
     description: "Gives a random anime character from the top 500 results.",

@@ -1,3 +1,4 @@
+const fetch = require("node-fetch");
 module.exports = {
   name: "banime",
   description: "Gives a random anime from the top 500 results.",
