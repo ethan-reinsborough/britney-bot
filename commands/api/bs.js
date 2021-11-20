@@ -10,6 +10,7 @@ module.exports = {
             ['SCOFFED'],
             ['ABHOR'],
             ['MALEVOLENT'],
+            ['SEMANTICS'],
             ['BIG -- BOOBS; AREOLAS.'],
             ['SYNOPSIS'],
             ['I SCHLAMMED MY PENITH IN THE CAR DOOR!'],
