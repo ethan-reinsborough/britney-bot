@@ -22,6 +22,14 @@ for (const folder of commandFolders) {
 }
 //#endregion
 
+global.counter = 0;
+global.after = "";
+global.page = 1;
+
+global.counter2 = 0;
+global.after2 = "";
+global.page2 = 1;
+
 client.on("ready", () => {
   console.log("Bot is ready");
   client.user.setStatus("available");
