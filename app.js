@@ -7,8 +7,8 @@ const { MessageEmbed } = require("discord.js");
 const prefix = ";";
 require("dotenv").config();
 
-//const client = new Discord.Client();
-const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
+const client = new Discord.Client();
+//const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
 client.commands = new Discord.Collection();
 
 const commandFolders = fs.readdirSync('./commands');
