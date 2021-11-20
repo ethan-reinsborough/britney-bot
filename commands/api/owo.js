@@ -6,7 +6,6 @@ module.exports = {
     async execute(message) {
         const uwuifier = new Uwuifier();
         var uwu = message.content.substring(';owo'.length);
-        message.channel.send(uwu);
         message.channel.send(uwuifier.uwuifySentence(uwu));
     },
   };
