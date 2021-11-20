@@ -6,7 +6,7 @@ module.exports = {
       
       for(i = 0; i < global.characters.length; i++){
           if(global.characters[i][0] == input[1]){
-              message.channel.send(global.characters[0][i]);
+              message.channel.send(global.characters[0][i][0]);
           }
       }
     },
