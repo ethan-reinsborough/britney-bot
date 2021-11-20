@@ -20,6 +20,8 @@
   "dependencies": {
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
-    "hmtai": "^2.0.9"
+    "fetch": "^1.1.0",
+    "hmtai": "^2.0.9",
+    "request": "^2.88.2"
   }
 }
