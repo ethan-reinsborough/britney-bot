@@ -21,6 +21,10 @@ for (const folder of commandFolders) {
 }
 //#endregion
 
+global.characters = [];
+global.interval = null;
+global.cont = false;
+
 global.counter = 0;
 global.after = "";
 global.page = 1;
