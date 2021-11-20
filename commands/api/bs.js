@@ -19,7 +19,21 @@ module.exports = {
             ["I'm gonna say a bad word"],
             ["I'm gonna get racist"],
             ["meow"],
-            ["breedable."]
+            ["breedable."],
+            ["rice rocket"],
+            ["I made eggs and rice"],
+            ["Hello, how are you. Please help me, I am under the water"],
+            ["STEAAAAAALTH TIME"],
+            ["I WAS HIDING HAHAHAHA"],
+            ["DEEDEEDEEDEEDEEE DEDEDEDEDEEEEEEEEEEEEEE (aggressively)"],
+            ["BROOOOOOOOOOOOO"],
+            ["FINGER IN HIS ASS"],
+            ["LOGIC PUZZLE"],
+            ["SUDOKU"],
+            ["CROSSWORD PUZZLE"],
+            ["4 AM PISS"],
+            ["LEBLANC"],
+            ["NEW JERSEY"]
         ];
         let wordnum = Math.floor(Math.random() * words.length);
         message.channel.send(words[wordnum]);
