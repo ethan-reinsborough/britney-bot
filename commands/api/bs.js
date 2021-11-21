@@ -28,7 +28,7 @@ module.exports = {
             ["I WAS HIDING HAHAHAHA"],
             ["DEEDEEDEEDEEDEEE DEDEDEDEDEEEEEEEEEEEEEE (aggressively)"],
             ["BROOOOOOOOOOOOO"],
-            ["FINGER IN HIS ASS"],
+            ["FINGERS IN HIS ASS"],
             ["LOGIC PUZZLE"],
             ["SUDOKU"],
             ["CROSSWORD PUZZLE"],
