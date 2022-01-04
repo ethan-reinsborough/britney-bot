@@ -4,7 +4,7 @@ module.exports = {
     name: "w",
     description: "Wish for a waifu!",
     async execute(message) {
-        let pageNum = Math.floor(Math.random() * 5 + 1);
+        let pageNum = Math.floor(Math.random() * 7 + 1);
         let printNum = Math.floor(Math.random() * 10000 + 1);
         const res = await fetch(
           `https://api.jikan.moe/v3/top/characters/${pageNum}`
