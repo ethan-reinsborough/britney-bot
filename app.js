@@ -21,6 +21,8 @@ for (const folder of commandFolders) {
 }
 //#endregion
 
+global.waifus = [];
+
 global.characters = [];
 global.interval = null;
 global.cont = false;

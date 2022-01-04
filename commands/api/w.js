@@ -20,8 +20,9 @@ module.exports = {
         }
         var randomColor = Math.floor(Math.random()*16777215).toString(16);
         const embed = new MessageEmbed()
-                .setAuthor(`${title} | Rank: ${rank} | ED 1 | #${printNum}`)
+                .setAuthor(`${title} | Rank: ${rank}`)
                 .setColor(randomColor)
+                .setFooter(`ED 1 | #${printNum}`)
                 .setImage(res["top"][`${listNum}`]["image_url"])
                 message.channel.send(embed);
     },
