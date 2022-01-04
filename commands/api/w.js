@@ -22,7 +22,7 @@ module.exports = {
         const embed = new MessageEmbed()
                 .setAuthor(`${title} | Rank: ${rank}`)
                 .setColor(randomColor)
-                .setFooter(`ED 1 | #${printNum}`)
+                .setFooter(`ED 1 #${printNum}`)
                 .setImage(res["top"][`${listNum}`]["image_url"])
                 message.channel.send(embed);
     },
