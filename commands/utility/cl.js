@@ -14,7 +14,8 @@ module.exports = {
             ['https://www.youtube.com/watch?v=8MAfrz2heYg'],
             ['https://www.youtube.com/watch?v=84HJWRjuHkw'],
             ['https://www.youtube.com/watch?v=pOI2Lh3gOjw'],
-            ['https://www.youtube.com/watch?v=mJgB8jm2peA']
+            ['https://www.youtube.com/watch?v=mJgB8jm2peA'],
+            ['https://www.youtube.com/watch?v=pmYsXkYAwQg']
         ];
         let wordnum = Math.floor(Math.random() * words.length);
         message.channel.send(words[wordnum]);
