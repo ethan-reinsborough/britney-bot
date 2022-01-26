@@ -9,7 +9,11 @@ module.exports = {
             ['https://www.youtube.com/watch?v=7219-Xa-gfs'],
             ['https://www.youtube.com/watch?v=9ywnLQywz74'],
             ['https://youtu.be/n4hm66oOlNI?t=9'],
-            ['https://www.youtube.com/watch?v=kVTAIFi4MJw']
+            ['https://www.youtube.com/watch?v=kVTAIFi4MJw'],
+            ['https://www.youtube.com/watch?v=kFpps3kgaHI&ab_channel=Hydrea'],
+            ['https://www.youtube.com/watch?v=8MAfrz2heYg'],
+            ['https://www.youtube.com/watch?v=84HJWRjuHkw'],
+            ['https://www.youtube.com/watch?v=pOI2Lh3gOjw']
         ];
         let wordnum = Math.floor(Math.random() * words.length);
         message.channel.send(words[wordnum]);
