@@ -13,7 +13,8 @@ module.exports = {
             ['https://www.youtube.com/watch?v=kFpps3kgaHI&ab_channel=Hydrea'],
             ['https://www.youtube.com/watch?v=8MAfrz2heYg'],
             ['https://www.youtube.com/watch?v=84HJWRjuHkw'],
-            ['https://www.youtube.com/watch?v=pOI2Lh3gOjw']
+            ['https://www.youtube.com/watch?v=pOI2Lh3gOjw'],
+            ['https://www.youtube.com/watch?v=mJgB8jm2peA']
         ];
         let wordnum = Math.floor(Math.random() * words.length);
         message.channel.send(words[wordnum]);
