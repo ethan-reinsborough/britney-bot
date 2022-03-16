@@ -27,7 +27,7 @@ module.exports = {
         const res = await fetch(
             `https://acnhapi.com/v1/villagers`
           ).then((response) => response.json());
-        message.channel.send(res[1]["name"]["name-USen"]);
+        message.channel.send(res["ant00"]["name"]["name-USen"]);
         
         /*
         const embed = new MessageEmbed()
