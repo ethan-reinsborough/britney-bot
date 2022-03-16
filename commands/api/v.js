@@ -23,7 +23,7 @@ module.exports = {
                 var randomColor = Math.floor(Math.random()*16777215).toString(16);
                 const embed = new MessageEmbed()
                 .setTitle(`${res[key]["name"]["name-USen"]}`)
-                .setColor(randomColor)
+                .setColor(`${res[key]["bubble-color"]}`)
                 .setThumbnail(`http://acnhapi.com/v1/icons/villagers/${villagerId}`)
                 .setDescription(`**Gender:** ${res[key]["gender"]} \n**Species:** ${res[key]["species"]} \n**Catchphrase:** ${res[key]["catch-phrase"]}`)
                 .setFooter(`Birthday - ${res[key]["birthday-string"]}`)
