@@ -10,9 +10,9 @@ module.exports = {
             message.channel.send("Usage: v <villager name>");
             return;
         }
-        var normalizedText = input[1].toLowerCase();
+        var normalizedText = input[1].toLowerCase().trim();
         var capitalizedName = normalizedText.charAt(0).toUpperCase() + normalizedText.slice(1);
-        message.channel.send(capitalizedName);
+
         const res = await fetch(
             `https://acnhapi.com/v1/villagers`
           ).then((response) => response.json());
@@ -22,9 +22,12 @@ module.exports = {
                 var villagerId = res[key]["id"];
                 
                 const embed = new MessageEmbed()
-                .setAuthor(`${res[key]["name"]["name-USen"]}`)
+                .setTitle(`${res[key]["name"]["name-USen"]}`)
                 .setColor("#0000FF")
                 .setThumbnail(`http://acnhapi.com/v1/icons/villagers/${villagerId}`)
+                .setDescription(`Gender: ${res[key]["gender"]} Species: ${res[key]["species"]} Catchphrase: ${res[key]["catch-phrase"]}`)
+                .setFooter(`${res[key]["birthday-string"]}`)
+                .setImage(`${res[key]["image_uri"]}`)
                  message.channel.send(embed);
                 return;
             }
