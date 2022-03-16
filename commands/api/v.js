@@ -28,7 +28,9 @@ module.exports = {
             `https://acnhapi.com/v1/villagers`
           ).then((response) => response.json());
         message.channel.send("TEST");
-        message.channel.send(res[0]["name"]["name-USen"]);
+        for(const key in res){
+            message.channel.send(`${key} : ${res[key]}`);
+        }
         
         /*
         const embed = new MessageEmbed()
