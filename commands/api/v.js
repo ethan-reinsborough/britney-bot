@@ -31,7 +31,7 @@ module.exports = {
         for(const key in res){
             message.channel.send(`${key} : ${res[key]}`);
         }
-        
+        //
         /*
         const embed = new MessageEmbed()
                 .setAuthor(`${title} | Rank: ${rank}`)
