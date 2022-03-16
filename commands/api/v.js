@@ -20,13 +20,13 @@ module.exports = {
         for(const key in res){
             if(res[key]["name"]["name-USen"] == capitalizedName){
                 var villagerId = res[key]["id"];
-                
+                var randomColor = Math.floor(Math.random()*16777215).toString(16);
                 const embed = new MessageEmbed()
                 .setTitle(`${res[key]["name"]["name-USen"]}`)
-                .setColor("#0000FF")
+                .setColor(randomColor)
                 .setThumbnail(`http://acnhapi.com/v1/icons/villagers/${villagerId}`)
-                .setDescription(`Gender: ${res[key]["gender"]} Species: ${res[key]["species"]} Catchphrase: ${res[key]["catch-phrase"]}`)
-                .setFooter(`${res[key]["birthday-string"]}`)
+                .setDescription(`**Gender:** ${res[key]["gender"]} \n**Species:** ${res[key]["species"]} \n**Catchphrase:** ${res[key]["catch-phrase"]}`)
+                .setFooter(`Birthday - ${res[key]["birthday-string"]}`)
                 .setImage(`${res[key]["image_uri"]}`)
                  message.channel.send(embed);
                 return;
