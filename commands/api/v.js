@@ -20,7 +20,6 @@ module.exports = {
         for(const key in res){
             if(res[key]["name"]["name-USen"] == capitalizedName){
                 var villagerId = res[key]["id"];
-                var randomColor = Math.floor(Math.random()*16777215).toString(16);
                 const embed = new MessageEmbed()
                 .setTitle(`${res[key]["name"]["name-USen"]}`)
                 .setColor(`${res[key]["bubble-color"]}`)
