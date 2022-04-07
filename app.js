@@ -51,7 +51,7 @@ client.login(process.env.BOT_TOKEN);
 
 client.on("message", async (message) => {
 	if(message.author.id == "646937666251915264"){
-		input = message.content.split(" ");
+		var input = message.content.split(" ");
 		if(input[0] == "I'm"){
 		  message.channel.send("<@106944685712375808>");
 		}
