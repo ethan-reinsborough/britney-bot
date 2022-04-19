@@ -8,6 +8,7 @@ module.exports = {
         .then(messageMappings => {
         let messages = Array.from(messageMappings.values());
         let previousMessage = messages[1];
+        message.channel.send(previousMessage);
         // do something with previous message
         const receivedEmbed = previousMessage.embeds[0];
         message.channel.send(receivedEmbed);
