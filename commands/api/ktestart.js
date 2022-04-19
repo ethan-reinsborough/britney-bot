@@ -4,6 +4,7 @@ module.exports = {
     name: "ktestart",
     description: "Testing art retrieval from Karuta!",
     async execute(message) {
+        /*
         message.channel.fetchMessages({limit: 2})
         .then(messageMappings => {
         let messages = Array.from(messageMappings.values());
@@ -12,7 +13,8 @@ module.exports = {
         // do something with previous message
         const receivedEmbed = previousMessage.embeds[0];
         message.channel.send(receivedEmbed);
-        })
+        })*/
+        message.channel.send("HEllo i am a very cool test message!!!");
     },
   };
   
