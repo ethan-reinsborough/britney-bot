@@ -3,6 +3,7 @@
 const fetch = require("node-fetch");
 const fs = require("fs");
 const Discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 const prefix = ";";
 require("dotenv").config();
 
@@ -50,12 +51,14 @@ client.on("ready", () => {
 client.login(process.env.BOT_TOKEN);
 
 client.on("message", async (message) => {
+
 	if(message.author.id == "646937666251915264"){
 		var input = message.content.split(" ");
 		if(input[0] == "I'm"){
 		  message.channel.send("<@106944685712375808>");
 		}
 	  }
+	  
   if (!message.content.startsWith(prefix)) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
